@@ -1,0 +1,1 @@
+package com.example.modelflow.model; import org.springframework.data.jpa.repository.JpaRepository; public interface ModelReleaseRepository extends JpaRepository<ModelRelease,Long>{}

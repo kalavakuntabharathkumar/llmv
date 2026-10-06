@@ -1,0 +1,10 @@
+services:
+ postgres:
+  image: postgres:16
+  environment: {POSTGRES_DB: models, POSTGRES_USER: models, POSTGRES_PASSWORD: models}
+  ports: ["5432:5432"]
+ api:
+  build: .
+  depends_on: [postgres]
+  environment: {DB_HOST: postgres, DB_PORT: 5432, DB_NAME: models, DB_USER: models, DB_PASSWORD: models}
+  ports: ["8080:8080"]

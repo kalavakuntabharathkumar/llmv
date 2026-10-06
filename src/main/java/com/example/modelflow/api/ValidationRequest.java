@@ -1,0 +1,1 @@
+package com.example.modelflow.api; public record ValidationRequest(String macroName,String libertyContent,String lefContent){}

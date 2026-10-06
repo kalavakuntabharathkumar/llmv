@@ -1,0 +1,1 @@
+package com.example.modelflow.validation; import org.springframework.stereotype.Component; import java.util.UUID; @Component public class CharacterizationJobRunner{public String submit(String m){return "batch-"+UUID.randomUUID()+"-"+m;}}
